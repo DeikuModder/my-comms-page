@@ -1,12 +1,15 @@
-@import url(https://fonts.cdnfonts.com/s/36662/MinecraftTen-VGORe.woff);
+@font-face {
+    font-family: 'Minecraft';
+    src: url(./fonts/Minecraft.ttf);
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: minecraft, sans-serif;
     letter-spacing: 2px;
     list-style: none;
+    font-family: 'Minecraft', sans-serif;
 }
 
 :root {
