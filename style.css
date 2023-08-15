@@ -13,6 +13,10 @@
     --darkblue: rgb(27, 27, 27);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /*NAVBAR START*/
 
 #navbar {
@@ -41,7 +45,6 @@
 /*MAIN SECTION START*/
 
 section {
-    width: 100%;
     height: 100vh;
     background-color: #bd0042;
     padding: 20px;
