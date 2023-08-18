@@ -14,7 +14,7 @@
 }
 
 :root {
-    --darkblue: rgb(27, 27, 27);
+    --darkblue: rgb(46, 38, 58);
 }
 
 body {
@@ -51,7 +51,6 @@ body {
     align-items: center;
 
     background-color: var(--darkblue);
-    color: beige;
 }
 
 #navbar p {
@@ -97,6 +96,7 @@ body {
 #navicons .navicon a {
     margin-left: 10px;
     letter-spacing: 2px;
+    color: #fbc71e;
 }
 
 
@@ -107,7 +107,7 @@ body {
     }
 
     #navicons .navicon a {
-        color: black;
+        color: #fbc71e;
     }
 }
 
@@ -160,6 +160,12 @@ section {
     letter-spacing: 2px;
 }
 
+#welcome img {
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+}
+
 /*WELCOME SECTION END*/
 
 /*TERMS AND CONDITIONS START*/
@@ -196,10 +202,13 @@ section {
 .arrowdiv {
     color: #fbc71e;
     width: 100%;
-    position: relative;
-    top: 20px;
     font-size: 25px;
 
+}
+
+#examples p {
+    font-size: 28px;
+    color: #fbc71e;
 }
 
 /*EXAMPLES END*/
