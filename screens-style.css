@@ -1,0 +1,158 @@
+@import url(./style.css);
+
+@media (min-width: 1024px) {
+
+
+    #navbar p {
+        left: 10px;
+    }
+
+    section {
+        padding: 20px 10%;
+    }
+
+    #welcome p {
+        font-size: 30px;
+    }
+
+    #welcome img {
+        width: 280px;
+    }
+
+    .terms {
+        font-size: 30px;
+    }
+
+    #slider {
+        height: 70vh;
+        width: 400px;
+    }
+
+    #prices ul {
+        font-size: 35px;
+    }
+
+    footer button {
+        font-size: 40px;
+        margin-right: 50px;
+    }
+
+    footer a {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 1240px){
+    #navbar {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: rgb(24, 24, 24);
+    }
+
+    #navbar p {
+        font-size: 28px;
+        left: 13px;
+        top: 30px;
+        color: white;
+    }
+
+    #btnToggle {
+        display: none;
+    }
+
+    #navicons {
+        transform: translateX(0);
+        left: 0;
+        top: 0;
+        transition: none;
+    }
+
+    #navicons .navicon {
+        transition: all .2s ease-out;
+    }
+
+    #navicons .navicon:hover {
+        transform: scale(1.05);
+        transition: all .2s ease-in;
+    }
+
+    @supports (backdrop-filter: blur(1.5rem)) {
+        #navicons {
+            background: none;
+            backdrop-filter: none;
+        }
+    
+        #navicons .navicon a {
+            color: #fbc71e;
+        }
+    }
+
+
+    .main-doc {
+        width: calc(100% - 250px);
+        transform: translateX(250px);
+    }
+
+    #welcome {
+        height: 100vh;
+    }
+
+    #welcome h1 {
+        font-size: 60px;
+    }
+
+    #welcome img {
+        width: 320px;
+        transition: all .4s ease-out;
+    }
+
+    #welcome img:hover {
+        transform: var(--transformPerspective);
+    }
+
+    .terms {
+       font-size: 27px;
+    }
+
+    #slider {
+        overflow-y: hidden;
+    }
+
+    #examples h2 {
+        font-size: 40px;
+    }
+
+    footer {
+       display: none;
+    }
+
+    #clipboard {
+        width: 50px;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        border:none;
+        font-size: 30px;
+        color: antiquewhite;
+        background: none;
+        margin-bottom: 40px;
+        transition: all .2s ease-out;
+    }
+
+
+    #instagramLogo {
+        width: 40px;
+        font-size: 40px;
+        color: antiquewhite;
+        transition: all .2s ease-out;
+    }
+
+    #clipboard:hover, #instagramLogo:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: all .2s ease-in;
+    }
+}

@@ -15,6 +15,12 @@
 
 :root {
     --darkblue: rgb(46, 38, 58);
+
+    --transformPerspective: 
+    perspective(250px)
+    rotateX(10deg)
+    translateY(-5%)
+    translateZ(0);
 }
 
 body {
@@ -183,6 +189,11 @@ section {
 /*TERMS AND CONDITIONS END*/
 
 /*EXAMPLES START*/
+#examples {
+    display: grid;
+    place-content: center;
+}
+
 #slider {
     width: 100%;
     position: relative;
@@ -241,6 +252,10 @@ footer button {
     color: antiquewhite;
     background: none;
     margin-right: 20px;
+}
+
+footer button:hover {
+    cursor: pointer;
 }
 
 footer a {
