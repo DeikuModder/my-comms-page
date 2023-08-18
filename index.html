@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/051bb2f8c7.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
     <title>Gabx's Commission Site</title>
 </head>
 <body>
@@ -13,8 +12,13 @@
         <nav id="navbar">
             <p>GABX'S COMMISSIONS</p>
 
-            <ul id="navicons">
-                <li class="navicon"></li>
+            <button id="btnToggle" class="btnToggle" aria-controls="navicons" aria-expanded="false"></button>
+
+            <ul id="navicons" data-visible="false">
+                <li class="navicon"><a href="#welcome"><i class="fa-solid fa-house"></i>WELCOME</a></li>
+                <li class="navicon"><a href="#conditions"><i class="fa-solid fa-circle-info"></i>TERMS AND CONDITIONS</a></li>
+                <li class="navicon"><a href="#examples"><i class="fa-solid fa-image"></i>EXAMPLES</a></li>
+                <li class="navicon"><a href="#prices"><i class="fa-solid fa-money-bill"></i>PRICES</a></li>
             </ul>
         </nav>
     </header>
@@ -53,7 +57,6 @@
             <h2 class="h2">EXAMPLES</h2>
 
             <div id="slider">
-                <!-- <i class="fa-solid fa-arrow-right arrowdiv"></i> -->
                 <img src="./images/zelda icon.png" alt="zeldaIcon">
                 <img src="./images/link icon.png" alt="linkIcon">
                 <img src="./images/yuumi.png" alt="yuumiIcon">
@@ -63,8 +66,9 @@
                 <img src="./images/sephiroth.png" alt="sephiroth">
                 <img src="./images/black goku background.png" alt="blackGoku">
                 <img src="./images/atsv poster.png" alt="atsvPoster">
-                
             </div>
+
+            <i class="fa-solid fa-arrow-right arrowdiv">SLIDE TO THE LEFT</i>
         </section>
 
         <section id="prices" class="darksections">
@@ -93,7 +97,9 @@
 
     <footer>
         <button id="clipboard"><i class="fa-brands fa-discord"></i></button>
-        <a href="http://https://www.instagram.com/sevenbits.shop/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://instagram.com/sevenbits.shop?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-instagram"></i></a>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

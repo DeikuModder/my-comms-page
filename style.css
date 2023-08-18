@@ -10,6 +10,7 @@
     letter-spacing: 2px;
     list-style: none;
     font-family: 'Minecraft', sans-serif;
+    text-decoration: none;
 }
 
 :root {
@@ -21,6 +22,28 @@ body {
 }
 
 /*NAVBAR START*/
+
+#btnToggle {
+    width: 1.8em;
+    aspect-ratio: 1;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(./svg-icons/bars-solid.svg);
+    border: none;
+    font-size: 30px;
+    top: 1.5rem;
+    right: 10px;
+    position: absolute;
+    transition: all .4s ease-out;
+    z-index: 9999;
+}
+
+#btnToggle[aria-expanded="true"]{
+    transition: all .4s ease-in;
+    position: fixed;
+    width: 3rem;
+    background-image: url(./svg-icons/xmark-solid.svg);
+}
 
 #navbar {
     height: 15vh;
@@ -44,8 +67,50 @@ body {
 }
 
 #navicons {
-    
+    position: fixed;
+    width: 250px;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    height: 100vh;
+    background: hsl(0 0% 0% / 0.8);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in;
+    z-index: 1000;
 }
+
+#navicons[data-visible="true"]{
+    transform: translateX(0%);
+
+}
+
+#navicons .navicon {
+    margin: 20px;
+    padding: 10px;
+    border: 4px solid #fbc71e;
+}
+
+#navicons .navicon a {
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+
+
+@supports (backdrop-filter: blur(1.5rem)) {
+    #navicons {
+        background: hsl(250 100% 20% / 0.1);
+        backdrop-filter: blur(1.5rem);
+    }
+
+    #navicons .navicon a {
+        color: black;
+    }
+}
+
 
 /*NAVBAR END*/
 
@@ -126,6 +191,14 @@ section {
     left: 0;
     object-fit: fill;
     scroll-snap-align: center;
+}
+
+.arrowdiv {
+    color: #fbc71e;
+    width: 350px;
+    position: relative;
+    top: 20px;
+    font-size: 25px;
 }
 
 /*EXAMPLES END*/
